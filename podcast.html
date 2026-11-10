@@ -98,6 +98,7 @@ body.lock{overflow:hidden}
 }
 @media (max-width:480px){.me{display:none}.cont .thumb{height:120px}}
 @media (prefers-reduced-motion:reduce){.side,.scrim{transition:none}}
+.yt{max-width:900px;aspect-ratio:16/9;border-radius:18px;overflow:hidden;background:#000}.yt iframe{width:100%;height:100%;border:0;display:block}
 </style></head><body>
 <div class="app">
 <aside class="side">
@@ -113,13 +114,7 @@ body.lock{overflow:hidden}
   <div class="top" style="justify-content:flex-end"><div class="me"><div><b>Youssef El Dessouky</b><br><small>Legal Professional</small></div><div class="av" role="img" aria-label="Portrait"></div></div></div>
 <section class="view on" id="v-course"><p class="crumbs"><a href="index.html">← All courses</a></p>
 <div class="sec" style="margin-top:0"><h2 lang="ar" dir="rtl">LinkedIn بودكاست مع حيثيات / مزايا</h2></div>
-<div class="cp"><div><video id="vid" controls playsinline preload="metadata"></video><p class="empty" id="novid" hidden style="margin-top:10px">The video could not be loaded. Please upload the podcast folder next to this page.</p></div>
-<div class="vlist" id="vl"><button type="button" class="vi"><i></i><span><b>Part 1</b><small>10:00 · Podcast</small></span></button><button type="button" class="vi"><i></i><span><b>Part 2</b><small>10:00 · Podcast</small></span></button><button type="button" class="vi"><i></i><span><b>Part 3</b><small>10:00 · Podcast</small></span></button><button type="button" class="vi"><i></i><span><b>Part 4</b><small>9:53 · Podcast</small></span></button></div></div></section>
-<script>
-const PARTS=["podcast/p1.mp4","podcast/p2.mp4","podcast/p3.mp4","podcast/p4.mp4"];let cur=0;const btns=[...vl.querySelectorAll("button")];
-function setPart(i,play){cur=i;novid.hidden=true;vid.src=PARTS[i];btns.forEach((b,j)=>b.setAttribute("aria-current",j===i));if(play)vid.play().catch(()=>{})}
-btns.forEach((b,i)=>b.onclick=()=>setPart(i,true));vid.addEventListener("ended",()=>{if(cur<PARTS.length-1)setPart(cur+1,true)});vid.addEventListener("error",()=>{novid.hidden=false});setPart(0,false);
-</script>
+<div class="yt"><iframe src="https://www.youtube.com/embed/kDHUuMRKmW0?rel=0" title="LinkedIn بودكاست مع حيثيات / مزايا" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div></section>
 </main></div>
 <script>
 (function(){
