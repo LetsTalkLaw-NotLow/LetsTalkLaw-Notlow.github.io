@@ -116,9 +116,9 @@ body.lock{overflow:hidden}
 <aside class="side">
   <div class="brand"><div class="av" role="img" aria-label="Youssef El Dessouky"></div><div><b>Youssef<br>El Dessouky</b><small>Online Law Courses</small></div></div>
   <nav aria-label="Main">
-    <a href="index.html" data-v="courses" aria-current="page"><svg viewBox="0 0 24 24"><path d="M2 5h7a3 3 0 0 1 3 3v12a2 2 0 0 0-2-2H2zM22 5h-7a3 3 0 0 0-3 3v12a2 2 0 0 1 2-2h8z"/></svg><span>Courses</span></a>
-    <a href="about.html" data-v="about"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg><span>About</span></a>
-    <a href="contact.html" data-v="contact"><svg viewBox="0 0 24 24"><path d="M4 4h16v13H8l-4 4z"/></svg><span>Contact</span></a>
+    <a href="./" data-v="courses" aria-current="page"><svg viewBox="0 0 24 24"><path d="M2 5h7a3 3 0 0 1 3 3v12a2 2 0 0 0-2-2H2zM22 5h-7a3 3 0 0 0-3 3v12a2 2 0 0 1 2-2h8z"/></svg><span>Courses</span></a>
+    <a href="about" data-v="about"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg><span>About</span></a>
+    <a href="contact" data-v="contact"><svg viewBox="0 0 24 24"><path d="M4 4h16v13H8l-4 4z"/></svg><span>Contact</span></a>
   </nav>
   <div class="foot"><nav><a href="https://www.linkedin.com/in/youssef-el-dessouky/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M4 9h4v11H4zM6 4a2 2 0 1 1 0 4 2 2 0 0 1 0-4zM10 9h4v2c1-2 3-2.4 4.5-2C21 9.5 21 12 21 14v6h-4v-5c0-2-1-3-2.500-3S13 13 13 15v5h-3z"/></svg><span>LinkedIn</span></a></nav></div>
 </aside>
@@ -133,7 +133,7 @@ body.lock{overflow:hidden}
 </main></div>
 <script>
 const C=[["LinkedIn بودكاست مع حيثيات / مزايا","t2","pod"],["Civil Contract Drafting","t1"],["Negotiation Skills for Lawyers","t2"],["Legal Writing","t3"],["Public Speaking in Court","t4"],["AI Tools for Lawyers","t1"]];
-const card=([t,c,p])=>p?`<a class="card" href="podcast.html" data-t="${t}" style="text-decoration:none;color:inherit;display:block"><div class="thumb img"><span>▶ 1 video</span></div><h3 lang="ar" dir="rtl">${t}</h3><div class="meta"><div class="who"><div class="av"></div><div class="cline">Youssef El Dessouky<small>Legal Professional</small></div></div><span class="tag">New</span></div><p>Watch the full podcast episode.</p></a>`:`<article class="card" data-t="${t.toLowerCase()}"><div class="thumb ${c}"><span>Coming soon</span></div><h3>${t}</h3><div class="meta"><div class="who"><div class="av"></div><div class="cline">Youssef El Dessouky<small>Legal Professional</small></div></div><span class="tag">New</span></div><p>Course details and lessons will be added soon.</p></article>`;
+const card=([t,c,p])=>p?`<a class="card" href="podcast" data-t="${t}" style="text-decoration:none;color:inherit;display:block"><div class="thumb img"><span>▶ 1 video</span></div><h3 lang="ar" dir="rtl">${t}</h3><div class="meta"><div class="who"><div class="av"></div><div class="cline">Youssef El Dessouky<small>Legal Professional</small></div></div><span class="tag">New</span></div><p>Watch the full podcast episode.</p></a>`:`<article class="card" data-t="${t.toLowerCase()}"><div class="thumb ${c}"><span>Coming soon</span></div><h3>${t}</h3><div class="meta"><div class="who"><div class="av"></div><div class="cline">Youssef El Dessouky<small>Legal Professional</small></div></div><span class="tag">New</span></div><p>Course details and lessons will be added soon.</p></article>`;
 const gAll=document.getElementById("g-all"),q=document.getElementById("q"),none=document.getElementById("none");
 gAll.innerHTML=C.map(card).join("");
 
